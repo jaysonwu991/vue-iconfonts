@@ -68,7 +68,7 @@ import IconFont from 'vue-iconfonts'
 import '@/assets/css/iconfont/iconfont.css'
 import '@/assets/css/iconfont/iconfont.js'
 
-Vue.component(IconFont)
+Vue.component('IconFont', IconFont)
 ```
 
 ```html
@@ -87,7 +87,7 @@ Vue.component(IconFont)
   <IconFont type="svg"
             name="icon-notSelected"
             color="f00"
-            size="40" /> SvgIcon
+            size="30" /> SvgIcon
 </div>
 ```
 Simple Demo [Here](https://github.com/lingjie991/vue-iconfonts/tree/master/demo)
