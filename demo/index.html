@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>vue-iconfonts</title>
+  <link rel="stylesheet" href="./iconfont.css">
+  <script src="https://unpkg.com/vue"></script>
+  <script src="./iconfont.js"></script>
+  <script src="./vue-iconfonts.min.js"></script>
+</head>
+<style>
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    text-align: center;
+    font-size: 40px;
+  }
+</style>
+
+<body>
+  <div id="app">
+    <div>
+      Hello<icon-font type="icon" name="icon-notSelected" color="f00" size="40"></icon-font>FontIcon
+    </div>
+    <div>
+      Hello<icon-font type="svg" name="icon-notSelected" color="f00" size="40"></icon-font>SvgIcon
+    </div>
+  </div>
+  <script>
+    new Vue({
+      el: '#app'
+    })
+
+  </script>
+</body>
+
+</html>
