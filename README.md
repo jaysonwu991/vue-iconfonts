@@ -1,6 +1,6 @@
 # vue-iconfonts
 
-> A Vue.js project for using iconfont to extend your own icons
+> A Vue.js project to extend your own icons on the basic of using iconfont
 
 ![Vue 2.x](https://img.shields.io/badge/vue-2.x-green.svg 'Vue 2 Compatible')
 
@@ -16,6 +16,9 @@ npm install vue-iconfonts --save
 ### Manual
 
 ```html
+# Add vue.js dependency to your HTML file first
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.11/dist/vue.js"></script>
+
 # Download `vue-iconfonts.min.js` and include it in your HTML file
 <script src="/Your Path/vue-iconfonts.min.js"></script>
 ```
@@ -71,7 +74,7 @@ Vue.component(IconFont)
 ```html
 <!-- FontClass -->
 <div>
-  你好
+  Hello
   <IconFont type="icon"
             name="icon-notSelected"
             color="f00"
@@ -80,7 +83,7 @@ Vue.component(IconFont)
 
 <!-- Symbol, Svg -->
 <div>
-  你好
+  Hello
   <IconFont type="svg"
             name="icon-notSelected"
             color="f00"
