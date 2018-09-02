@@ -68,7 +68,7 @@ import IconFont from 'vue-iconfonts'
 import '@/assets/css/iconfont/iconfont.css'
 import '@/assets/css/iconfont/iconfont.js'
 
-Vue.component(IconFont)
+Vue.component('IconFont', IconFont)
 ```
 
 ```html
