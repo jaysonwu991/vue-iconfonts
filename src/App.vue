@@ -1,28 +1,28 @@
 <template>
   <div id="app">
     <div>
-      你好
+      Hello
       <IconFont type="icon"
                 name="icon-notSelected"
                 color="f00"
                 size="50" /> FontIcon
     </div>
     <div>
-      你好
+      Hello
       <IconFont type="svg"
                 name="icon-notSelected"
                 color="f00"
                 size="50" /> SvgIcon
     </div>
     <div>
-      你好
+      Hello
       <IconFont type="icon"
                 name="icon-hasSelected"
                 color="0f0"
                 size="50" /> FontIcon
     </div>
     <div>
-      你好
+      Hello
       <IconFont type="svg"
                 name="icon-hasSelected"
                 color="0f0"

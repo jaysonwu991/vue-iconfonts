@@ -1,15 +1,21 @@
-var path = require('path')
-var webpack = require('webpack')
+const path = require('path')
+const webpack = require('webpack')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const MinifyPlugin = require("babel-minify-webpack-plugin")
 
 module.exports = {
+  mode: 'production',
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: 'vue-iconfonts.min.js',
-    library: 'vue-iconfonts',
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+    path: path.resolve(__dirname, './dist'),
+  },
+  resolve: {
+    extensions: ['*', '.js', '.vue', '.json'],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    },
   },
   module: {
     rules: [{
@@ -21,11 +27,7 @@ module.exports = {
       },
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: {}
-          // other vue-loader options go here
-        }
+        loader: 'vue-loader'
       },
       {
         test: /\.js$/,
@@ -41,12 +43,6 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js'
-    },
-    extensions: ['*', '.js', '.vue', '.json']
-  },
   devServer: {
     historyApiFallback: true,
     noInfo: true,
@@ -55,24 +51,22 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  plugins: [
+    new VueLoaderPlugin()
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
-  // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"'
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: false,
-      compress: {
-        warnings: false
-      }
-    }),
+    new MinifyPlugin(),
+    new VueLoaderPlugin(),
     new webpack.LoaderOptionsPlugin({
       minimize: true
     })
