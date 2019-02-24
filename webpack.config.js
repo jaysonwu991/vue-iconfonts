@@ -1,7 +1,9 @@
 const path = require('path')
 const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const MinifyPlugin = require("babel-minify-webpack-plugin")
+const UglifyJsPlugin = require('uglifyjs-3-webpack-plugin')
+// const MinifyPlugin = require("babel-minify-webpack-plugin")
+const isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
   mode: 'production',
@@ -47,25 +49,22 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true,
     overlay: true
-  },
-  performance: {
-    hints: false
-  },
-  devtool: '#eval-source-map',
-  plugins: [
-    new VueLoaderPlugin()
-  ]
+  }
+  // performance: {
+  //   hints: false
+  // },
+  // devtool: 'cheap-source-map'
 }
 
-if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
+if (isProduction) {
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"'
       }
     }),
-    new MinifyPlugin(),
+    // new MinifyPlugin(),
+    new UglifyJsPlugin(),
     new VueLoaderPlugin(),
     new webpack.LoaderOptionsPlugin({
       minimize: true
