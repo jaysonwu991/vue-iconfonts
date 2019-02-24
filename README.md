@@ -10,14 +10,14 @@
 
 ```bash
 # Install dependencies
-npm install vue-iconfonts --save
+npm i -S vue-iconfonts
 ```
 
 ### Manual
 
 ```html
 # Add vue.js dependency to your HTML file first
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.11/dist/vue.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
 
 # Download `vue-iconfonts.min.js` and include it in your HTML file
 <script src="/Your Path/vue-iconfonts.min.js"></script>
@@ -87,7 +87,7 @@ Vue.component('IconFont', IconFont)
   <IconFont type="svg"
             name="icon-notSelected"
             color="f00"
-            size="40" /> SvgIcon
+            size="30" /> SvgIcon
 </div>
 ```
 Simple Demo [Here](https://github.com/lingjie991/vue-iconfonts/tree/master/demo)
