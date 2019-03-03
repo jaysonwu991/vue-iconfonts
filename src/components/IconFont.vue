@@ -41,7 +41,7 @@ export default {
       return this.type === 'icon' ? true : false
     },
     iconName () {
-      return this.type === 'icon' ? this.name : `#${this.name}`
+      return this.type === 'icon' ? 'icon-' + this.name : `#icon-${this.name}`
     },
     initStyle () {
       let style = {}
