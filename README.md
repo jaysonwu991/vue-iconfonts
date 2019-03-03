@@ -10,7 +10,7 @@
 
 ```bash
 # Install dependencies
-npm i -S vue-iconfonts
+npm i vue-iconfonts
 ```
 
 ### Manual
@@ -76,7 +76,14 @@ Vue.component('IconFont', IconFont)
 <div>
   Hello
   <IconFont type="icon"
-            name="icon-notSelected"
+            name="hasSelected"
+            color="f00"
+            size="30" /> FontIcon
+</div>
+<div>
+  Hello
+  <IconFont type="icon"
+            name="notSelected"
             color="f00"
             size="30" /> FontIcon
 </div>
@@ -85,7 +92,14 @@ Vue.component('IconFont', IconFont)
 <div>
   Hello
   <IconFont type="svg"
-            name="icon-notSelected"
+            name="hasSelected"
+            color="f00"
+            size="30" /> SvgIcon
+</div>
+<div>
+  Hello
+  <IconFont type="svg"
+            name="notSelected"
             color="f00"
             size="30" /> SvgIcon
 </div>
