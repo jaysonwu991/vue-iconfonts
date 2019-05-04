@@ -1,24 +1,22 @@
 {
   "name": "vue-iconfonts",
   "description": "A Vue.js project for using iconfont to extend your own icons",
-  "version": "1.0.4",
+  "version": "2.0.11",
   "author": "lingjie991 <wulingjie991@outlook.com>",
   "license": "MIT",
   "main": "dist/vue-iconfonts.min.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "webpack-dev-server --open --client-log-level info --config=config/webpack.dev.js",
+    "build": "webpack --config=config/webpack.prod.js"
   },
   "keywords": [
     "vue",
     "icon",
     "font",
     "iconfont",
+    "icon-font",
     "vue-iconfonts"
   ],
-  "dependencies": {
-    "vue": "^2.6.7"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:jayson991/vue-iconfonts.git"
@@ -28,22 +26,32 @@
     "last 2 versions",
     "not ie <= 8"
   ],
+  "files": [
+    "config",
+    "dist",
+    "package.json",
+    "package-lock.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-stage-2": "^6.24.1",
-    "cross-env": "^5.2.0",
-    "css-loader": "^2.1.0",
-    "file-loader": "^3.0.1",
-    "uglifyjs-3-webpack-plugin": "^1.2.4",
-    "vue-loader": "^15.6.4",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "vue-loader": "^15.7.0",
     "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.7",
-    "webpack": "^4.29.5",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.0"
+    "webpack-dev-server": "^3.2.1"
   }
 }

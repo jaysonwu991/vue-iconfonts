@@ -3,45 +3,45 @@
     <div>
       Hello
       <IconFont type="icon"
-                name="icon-notSelected"
+                name="notSelected"
                 color="f00"
                 size="50" /> FontIcon
     </div>
     <div>
       Hello
       <IconFont type="svg"
-                name="icon-notSelected"
+                name="notSelected"
                 color="f00"
                 size="50" /> SvgIcon
     </div>
     <div>
       Hello
       <IconFont type="icon"
-                name="icon-hasSelected"
+                name="hasSelected"
                 color="0f0"
                 size="50" /> FontIcon
     </div>
     <div>
       Hello
       <IconFont type="svg"
-                name="icon-hasSelected"
+                name="hasSelected"
                 color="0f0"
                 size="50" /> SvgIcon
     </div>
     <IconFont type="icon"
-              name="icon-notSelected"
+              name="notSelected"
               color="f00"
               size="50" />
     <IconFont type="icon"
-              name="icon-hasSelected"
+              name="hasSelected"
               color="0f0"
               size="50" />
     <IconFont type="svg"
-              name="icon-notSelected"
+              name="notSelected"
               color="f00"
               size="50" />
     <IconFont type="svg"
-              name="icon-hasSelected"
+              name="hasSelected"
               color="0f0"
               size="50" />
   </div>

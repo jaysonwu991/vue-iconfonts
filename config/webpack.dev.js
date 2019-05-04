@@ -1,17 +1,14 @@
 const path = require('path')
 const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const UglifyJsPlugin = require('uglifyjs-3-webpack-plugin')
-// const MinifyPlugin = require("babel-minify-webpack-plugin")
-const isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/main.js',
   output: {
-    publicPath: '/dist/',
-    filename: 'vue-iconfonts.min.js',
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, '../lib'),
+    publicPath: '/lib/',
+    filename: 'index.js'
   },
   resolve: {
     extensions: ['*', '.js', '.vue', '.json'],
@@ -20,13 +17,7 @@ module.exports = {
     },
   },
   module: {
-    rules: [{
-        test: /\.css$/,
-        use: [
-          'vue-style-loader',
-          'css-loader'
-        ],
-      },
+    rules: [
       {
         test: /\.vue$/,
         loader: 'vue-loader'
@@ -35,6 +26,13 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ],
       },
       {
         test: /\.(png|jpg|gif|svg|eot|ttf)$/,
@@ -49,25 +47,17 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true,
     overlay: true
-  }
-  // performance: {
-  //   hints: false
-  // },
-  // devtool: 'cheap-source-map'
-}
-
-if (isProduction) {
-  module.exports.plugins = (module.exports.plugins || []).concat([
+  },
+  performance: {
+    hints: false
+  },
+  devtool: '#eval-source-map',
+  plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: '"production"'
+        NODE_ENV: JSON.stringify('development')
       }
     }),
-    // new MinifyPlugin(),
-    new UglifyJsPlugin(),
-    new VueLoaderPlugin(),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true
-    })
-  ])
+    new VueLoaderPlugin()
+  ]
 }
