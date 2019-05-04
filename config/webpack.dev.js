@@ -6,10 +6,9 @@ module.exports = {
   mode: 'development',
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, '../dist'),
-    publicPath: '/dist/',
-    filename: 'vue-iconfonts.min.js',
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, '../lib'),
+    publicPath: '/lib/',
+    filename: 'index.js'
   },
   resolve: {
     extensions: ['*', '.js', '.vue', '.json'],
@@ -18,13 +17,7 @@ module.exports = {
     },
   },
   module: {
-    rules: [{
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ],
-      },
+    rules: [
       {
         test: /\.vue$/,
         loader: 'vue-loader'
@@ -33,6 +26,13 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ],
       },
       {
         test: /\.(png|jpg|gif|svg|eot|ttf)$/,

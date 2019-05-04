@@ -104,4 +104,4 @@ Vue.component('IconFont', IconFont)
             size="30" /> SvgIcon
 </div>
 ```
-Simple Demo [Here](https://github.com/lingjie991/vue-iconfonts/tree/master/demo)
+Simple Demo [Here](https://github.com/jayson991/vue-iconfonts/tree/master/demo)

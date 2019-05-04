@@ -34,20 +34,22 @@
     "README.md"
   ],
   "dependencies": {
-    "vue": "^2.6.8"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
-    "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.2",
     "vue-loader": "^15.7.0",
-    "vue-template-compiler": "^2.6.8",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"

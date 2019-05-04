@@ -1,16 +1,16 @@
-import IconFontComponent from './components/IconFont'
+// import IconFontComponent from './components/IconFont'
 
-const IconFont = {
-  install(Vue) {
-    Vue.component('IconFont', IconFontComponent)
-  }
-}
+// const IconFont = {
+//   install(Vue) {
+//     Vue.component('IconFont', IconFontComponent)
+//   }
+// }
 
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.component('IconFont', IconFontComponent)
-}
+// if (typeof window !== 'undefined' && window.Vue) {
+//   window.Vue.component('IconFont', IconFontComponent)
+// }
 
-export default IconFont
+// export default IconFont
 
 // import Vue from 'vue'
 
@@ -28,20 +28,20 @@ export default IconFont
 
 // export default IconFont
 
-// import Vue from 'vue'
-// import App from './App'
-// // import IconFont from './components/IconFont'
+import Vue from 'vue'
+import App from './App'
+import IconFont from './components/IconFont'
 // import IconFont from '../dist/vue-iconfonts.min'
-// import './assets/css/iconfont/iconfont.css'
-// import './assets/css/iconfont/iconfont'
+import './assets/css/iconfont/iconfont.css'
+import './assets/css/iconfont/iconfont'
 
-// Vue.component('IconFont', IconFont)
+Vue.component('IconFont', IconFont)
 
-// Vue.config.productionTip = false
+Vue.config.productionTip = false
 
-// /* eslint-disable no-new */
-// new Vue({
-//   el: '#app',
-//   template: '<App/>',
-//   components: {App}
-// })
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  template: '<App/>',
+  components: {App}
+})
