@@ -36,7 +36,6 @@
     "vue-iconfonts"
   ],
   "files": [
-    "config",
     "dist",
     "package.json",
     "package-lock.json",
