@@ -19,7 +19,7 @@ npm i vue-iconfonts
 # Add vue.js dependency to your HTML file first
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
-# Download `vue-iconfonts.min.js` and include it in your HTML file
+# Download `vue-iconfonts.min.js` file from `demo` directory and include it to your HTML file
 <script src="/Your Path/vue-iconfonts.min.js"></script>
 ```
 
@@ -27,7 +27,7 @@ npm i vue-iconfonts
 
 It’s a Vector Icon Management & Communication Platform made by Alimama MUX, designers could upload vector icons here, and users could download it by several kinds of format.Also, the icons could be translated into Fonts for front-end engineers’ usage.
 
-> Download the icons from iconfont.cn, and `upzip download.zip`.
+> Download the icons project from [iconfont.cn](https://www.iconfont.cn/), and `upzip download.zip`.
 
 ### FontClass
 
