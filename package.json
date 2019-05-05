@@ -1,7 +1,7 @@
 {
   "name": "vue-iconfonts",
   "description": "A Vue.js project for using iconfont to extend your own icons",
-  "version": "2.0.11",
+  "version": "2.1.0",
   "author": "jayson991 <wulingjie991@outlook.com>",
   "license": "MIT",
   "main": "dist/vue-iconfonts.min.js",
