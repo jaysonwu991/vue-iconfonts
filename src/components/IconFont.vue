@@ -38,7 +38,7 @@ export default {
   },
   computed: {
     iconType () {
-      return this.type === 'icon' ? true : false
+      return this.type === 'icon'
     },
     iconName () {
       return this.type === 'icon' ? 'icon-' + this.name : `#icon-${this.name}`
@@ -59,13 +59,13 @@ export default {
   },
   methods: {
     handleClick (event) {
-      this.$emit("on-click", event);
+      this.$emit('on-click', event)
     }
   }
 }
 </script>
 
-<style scoped>
+<style>
 .svgIcon {
   width: 1em;
   height: 1em;
