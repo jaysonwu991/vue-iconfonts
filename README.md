@@ -4,7 +4,7 @@
 
 ![Vue 2.x](https://img.shields.io/badge/vue-2.x-green.svg 'Vue 2 Compatible')
 
-> A [iconfont](http://iconfont.cn/) plugin for Vuejs
+> A [Iconfont](http://www.iconfont.cn/) plugin for Vuejs
 
 ### Build Setup (Recommended NPM)
 
@@ -25,9 +25,7 @@ npm i vue-iconfonts
 
 ## Iconfont
 
-It’s a Vector Icon Management & Communication Platform made by Alimama MUX, designers could upload vector icons here, and users could download it by several kinds of format.Also, the icons could be translated into Fonts for front-end engineers’ usage.
-
-> Download the icons project from [iconfont.cn](https://www.iconfont.cn/), and `upzip download.zip`.
+> Upload your icons(SVG) to your icon project you have created and download it from [Iconfont](https://www.iconfont.cn/), unzip `download.zip`.
 
 ### FontClass
 
@@ -104,4 +102,4 @@ Vue.component('IconFont', IconFont)
             size="30" /> SvgIcon
 </div>
 ```
-Simple Demo [Here](https://github.com/jayson991/vue-iconfonts/tree/master/demo)
+Simple HTML Demo [Here](https://github.com/jayson991/vue-iconfonts/tree/master/demo)
