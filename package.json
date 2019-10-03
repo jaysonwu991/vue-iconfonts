@@ -1,11 +1,10 @@
 {
   "name": "vue-iconfonts",
-  "description": "A Vue.js project based on @vue/cli to extend your own icons/svgs by using iconfont",
-  "version": "2.2.0",
   "author": "jayson991 <wulingjie991@outlook.com>",
+  "description": "A Vue.js project based on @vue/cli to extend your own icons/svgs by using iconfont",
   "license": "MIT",
+  "version": "2.2.0",
   "main": "dist/vue-iconfonts.common.js",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
