@@ -1,4 +1,4 @@
-# vue-higher-iconfont
+# vue-iconfonts
 
 > A Vue.js project based on @vue/cli to extend your own icons/svgs by using iconfont
 
@@ -9,7 +9,7 @@
 ### Installation
 
 ```bash
-$ npm i -S vue-higher-iconfont
+$ npm i -S vue-iconfonts
 ```
 
 ### Manual
@@ -66,7 +66,7 @@ import '/PATH TO ICONFONT FOLDER/iconfont.js'
 
 ```javascript
 import Vue from 'vue'
-import IconFont from 'vue-higher-iconfont'
+import IconFont from 'vue-iconfonts'
 import '/PATH TO ICONFONT FOLDER/iconfont.css'
 import '/PATH TO ICONFONT FOLDER/iconfont.js'
 
