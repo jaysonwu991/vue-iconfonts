@@ -1,0 +1,49 @@
+{
+  "name": "vue-iconfonts",
+  "description": "A Vue.js project based on @vue/cli to extend your own icons/svgs by using iconfont",
+  "version": "2.2.0",
+  "author": "jayson991 <wulingjie991@outlook.com>",
+  "license": "MIT",
+  "main": "dist/vue-iconfonts.common.js",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name vue-iconfonts ./src/index.js"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "prettier": "^1.18.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "keywords": [
+    "vue",
+    "icon",
+    "font",
+    "@vue/cli",
+    "iconfont",
+    "vue-iconfonts"
+  ],
+  "files": [
+    "dist",
+    "package.json",
+    "package-lock.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jayson991/vue-iconfonts.git"
+  }
+}
