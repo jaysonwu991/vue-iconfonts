@@ -3,7 +3,7 @@
   "author": "jayson991 <wulingjie991@outlook.com>",
   "description": "A Vue.js project based on @vue/cli to extend your own icons/svgs by using iconfont",
   "license": "MIT",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "main": "dist/vue-iconfonts.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
