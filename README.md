@@ -12,13 +12,15 @@
 $ npm i -S vue-iconfonts
 ```
 
+> Warning: If you use the lower Vue version and the lower vue-template-compiler, please install the previous version (< 2.2.0)
+
 ### Manual
 
 ```html
 <!-- Add vue.js dependency to your HTML file first -->
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
-<!-- Download `vue-iconfonts.umd.min.js` file from `demo` folder and include it to your HTML file -->
+<!-- Download `vue-iconfonts.umd.min.js` file from `dist` folder and include it to your HTML file -->
 <script src="/PATH TO JS FOLDER/vue-iconfonts.umd.min.js"></script>
 ```
 
@@ -77,20 +79,32 @@ Vue.component('IconFont', IconFont)
 <!-- FontClass -->
 <div>
   Hello
-  <IconFont type="icon" name="hasSelected" color="f00" size="30" /> FontIcon
+  <IconFont type="icon"
+            name="hasSelected"
+            color="f00"
+            size="30" /> FontIcon
 </div>
 <div>
   Hello
-  <IconFont type="icon" name="notSelected" color="f00" size="30" /> FontIcon
+  <IconFont type="icon"
+            name="notSelected"
+            color="f00"
+            size="30" /> FontIcon
 </div>
 
 <!-- Symbol, Svg -->
 <div>
   Hello
-  <IconFont type="svg" name="hasSelected" color="f00" size="30" /> SvgIcon
+  <IconFont type="svg"
+            name="hasSelected"
+            color="f00"
+            size="30" /> SvgIcon
 </div>
 <div>
   Hello
-  <IconFont type="svg" name="notSelected" color="f00" size="30" /> SvgIcon
+  <IconFont type="svg"
+            name="notSelected"
+            color="f00"
+            size="30" /> SvgIcon
 </div>
 ```
