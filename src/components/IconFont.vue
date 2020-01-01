@@ -1,19 +1,7 @@
 <template>
   <span style="margin: 0; padding: 0;">
-    <span
-      v-if="iconType"
-      :class="iconName"
-      :style="initStyle"
-      @click="handleClick"
-    >
-    </span>
-    <svg
-      v-else
-      class="svgIcon"
-      :style="initStyle"
-      aria-hidden="true"
-      @click="handleClick"
-    >
+    <span v-if="iconType" :class="iconName" :style="initStyle" @click="handleClick"> </span>
+    <svg v-else class="svgIcon" :style="initStyle" aria-hidden="true" @click="handleClick">
       <use :xlink:href="iconName"></use>
     </svg>
   </span>
@@ -42,15 +30,13 @@ export default {
   },
   computed: {
     iconType() {
-      return this.type === "icon";
+      return this.type === "icon"
     },
     iconName() {
-      return this.type === "icon"
-        ? `iconfont icon-${this.name}`
-        : `#icon-${this.name}`;
+      return this.type === "icon" ? `iconfont icon-${this.name}` : `#icon-${this.name}`
     },
     initStyle() {
-      let style = {};
+      let style = {}
 
       if (this.type !== "icon") {
         style = {
@@ -59,26 +45,26 @@ export default {
           "vertical-align": "-0.15em",
           fill: "currentColor",
           overflow: "hidden"
-        };
+        }
       }
 
       if (this.color) {
-        style.color = "#" + this.color;
+        style.color = "#" + this.color
       }
 
       if (this.size) {
-        style.fontSize = this.size + "px";
+        style.fontSize = this.size + "px"
       }
 
-      return style;
+      return style
     }
   },
   methods: {
     handleClick(event) {
-      this.$emit("on-click", event);
+      this.$emit("on-click", event)
     }
   }
-};
+}
 </script>
 
 <style></style>

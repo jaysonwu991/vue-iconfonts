@@ -1,6 +1,6 @@
 # vue-iconfonts
 
-> A Vue.js project based on @vue/cli to extend your own icons/svgs by using iconfont
+> A Project Based On `@vue/cli` To Use Iconfont Intelligently
 
 ![Vue 2.x](https://img.shields.io/badge/vue-2.x-green.svg 'Vue 2 Compatible')
 
