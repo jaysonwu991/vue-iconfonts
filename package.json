@@ -3,7 +3,7 @@
   "author": "jayson991 <wulingjie991@outlook.com>",
   "description": "A Project Based On `@vue/cli` To Use Iconfont Intelligently",
   "license": "MIT",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "main": "dist/vue-iconfonts.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -40,8 +40,12 @@
     "README.md",
     "package.json"
   ],
+  "homepage": "https://github.com/jayson991/vue-iconfonts",
+  "bugs": {
+    "url": "https://github.com/jayson991/vue-iconfonts/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "git@github.com:jayson991/vue-iconfonts.git"
+    "url": "git+https://github.com:jayson991/vue-iconfonts.git"
   }
 }
