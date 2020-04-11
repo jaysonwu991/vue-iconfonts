@@ -1,10 +1,6 @@
 # vue-iconfonts
 
-> A Project Based On `@vue/cli` To Use Iconfont Intelligently
-
-![Vue 2.x](https://img.shields.io/badge/vue-2.x-green.svg 'Vue 2 Compatible')
-
-> A [Iconfont](http://www.iconfont.cn/) plugin for Vuejs
+> A Project For Vue To Use Iconfont Intelligently.
 
 ### Installation
 
@@ -12,16 +8,14 @@
 $ npm i -S vue-iconfonts
 ```
 
-> Warning: If you use the lower Vue version and the lower vue-template-compiler, please install the previous version (< 2.2.0)
-
 ### Manual
 
 ```html
 <!-- Add vue.js dependency to your HTML file first -->
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
-<!-- Download `vue-iconfonts.umd.min.js` file from `dist` folder and include it to your HTML file -->
-<script src="/PATH TO JS FOLDER/vue-iconfonts.umd.min.js"></script>
+<!-- Add vue-iconfonts.js dependency for your browser use then -->
+<script src="https://unpkg.com/vue-iconfonts"></script>
 ```
 
 ## Iconfont
@@ -30,81 +24,65 @@ $ npm i -S vue-iconfonts
 
 ### FontClass
 
-> Add iconfont.css to your project
+> Add iconfont.css to your project for browser use
 
 ```html
-<!-- Include the iconfont.css stylsheet into your HTML header -->
 <head>
-  <link rel="stylesheet" href="/PATH TO ICONFONT FOLDER/iconfont.css" />
+  <link rel="stylesheet" href="iconfont.css" />
 </head>
 ```
 
-> OR
+> Add iconfont.css to your project for vue project use
 
 ```javascript
-// Import css
-import '/PATH TO ICONFONT FOLDER/iconfont.css'
+import "iconfont.css";
 ```
 
 ### Symbol, Svg
 
-> Add iconfont.js to your project
+> Add iconfont.js to your project for browser use
 
 ```html
-<!-- Include the iconfont.js script into your HTML header -->
 <head>
-  <script src="/PATH TO ICONFONT FOLDER/iconfont.js"></script>
+  <script src="iconfont.js"></script>
 </head>
 ```
 
-> OR
+> Add iconfont.js to your project for vue project use
 
 ```javascript
-// Import js
-import '/PATH TO ICONFONT FOLDER/iconfont.js'
+import "iconfont.js";
 ```
 
-## Usage
+## Usage For Vue Project
 
 ```javascript
-import Vue from 'vue'
-import IconFont from 'vue-iconfonts'
-import '/PATH TO ICONFONT FOLDER/iconfont.css'
-import '/PATH TO ICONFONT FOLDER/iconfont.js'
+import Vue from "vue";
+import IconFont from "vue-iconfonts";
+import "iconfont.css";
+import "iconfont.js";
 
-Vue.component('IconFont', IconFont)
+Vue.component("IconFont", IconFont);
 ```
 
 ```html
 <!-- FontClass -->
 <div>
   Hello
-  <IconFont type="icon"
-            name="hasSelected"
-            color="f00"
-            size="30" /> FontIcon
+  <IconFont type="icon" name="hasSelected" color="f00" size="30" /> FontIcon
 </div>
 <div>
   Hello
-  <IconFont type="icon"
-            name="notSelected"
-            color="f00"
-            size="30" /> FontIcon
+  <IconFont type="icon" name="notSelected" color="f00" size="30" /> FontIcon
 </div>
 
 <!-- Symbol, Svg -->
 <div>
   Hello
-  <IconFont type="svg"
-            name="hasSelected"
-            color="f00"
-            size="30" /> SvgIcon
+  <IconFont type="svg" name="hasSelected" color="f00" size="30" /> SvgIcon
 </div>
 <div>
   Hello
-  <IconFont type="svg"
-            name="notSelected"
-            color="f00"
-            size="30" /> SvgIcon
+  <IconFont type="svg" name="notSelected" color="f00" size="30" /> SvgIcon
 </div>
 ```

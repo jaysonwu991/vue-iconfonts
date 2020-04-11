@@ -1,5 +1,5 @@
 // Import vue component
-import IconFontComponent from "./components/IconFont.vue"
+import IconFontComponent from "./IconFont.vue"
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {

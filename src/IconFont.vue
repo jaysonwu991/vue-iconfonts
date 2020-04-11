@@ -1,8 +1,8 @@
 <template>
   <span style="margin: 0; padding: 0;">
-    <span v-if="iconType" :class="iconName" :style="initStyle" @click="handleClick"> </span>
+    <span v-if="iconType" :class="iconName" :style="initStyle" @click="handleClick"></span>
     <svg v-else class="svgIcon" :style="initStyle" aria-hidden="true" @click="handleClick">
-      <use :xlink:href="iconName"></use>
+      <use :xlink:href="iconName" />
     </svg>
   </span>
 </template>
@@ -58,13 +58,6 @@ export default {
 
       return style
     }
-  },
-  methods: {
-    handleClick(event) {
-      this.$emit("on-click", event)
-    }
   }
 }
 </script>
-
-<style></style>
